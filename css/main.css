@@ -523,14 +523,14 @@ h2 {
   background-size: cover;
   background-repeat:no-repeat;
   position: relative;
-  padding: 95px 0 90px;
+  padding: 85px 0 90px;
   overflow: hidden;
 }
 
 .twit {
   position: absolute;
   left: 0;
-  top:-42%;
+  top: 2%;
 }
 
 #twitter-feed .item {

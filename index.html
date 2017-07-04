@@ -16,76 +16,6 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">	
 	<link href="css/responsive.css" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script>
-            $(document).ready(function(){
-                // Add smooth scrolling to all links
-                $("a").on('click', function(event) {
-
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-
-                        // Store hash
-                        var hash = this.hash;
-
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function(){
-
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
-            });
-		</script>
-		<script>
-            function getTimeRemaining(endtime) {
-                var t = Date.parse(endtime) - Date.parse(new Date());
-                var seconds = Math.floor((t / 1000) % 60);
-                var minutes = Math.floor((t / 1000 / 60) % 60);
-                var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                var days = Math.floor(t / (1000 * 60 * 60 * 24));
-                return {
-                    'total': t,
-                    'days': days,
-                    'hours': hours,
-                    'minutes': minutes,
-                    'seconds': seconds
-                };
-            }
-
-            function initializeClock(id, endtime) {
-                var clock = document.getElementById(id);
-                var daysSpan = clock.querySelector('.days');
-                var hoursSpan = clock.querySelector('.hours');
-                var minutesSpan = clock.querySelector('.minutes');
-                var secondsSpan = clock.querySelector('.seconds');
-
-                function updateClock() {
-                    var t = getTimeRemaining(endtime);
-
-                    daysSpan.innerHTML = t.days;
-                    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-                    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-                    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-                    if (t.total <= 0) {
-                        clearInterval(timeinterval);
-                    }
-                }
-
-                updateClock();
-                var timeinterval = setInterval(updateClock, 1000);
-            }
-
-            var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-            initializeClock('clockdiv', deadline);
-		</script>
     <!--[if lt IE 9]
 	     <script src="js/html5shiv.js"></script>
 	    <script src="js/respond.min.js"></script>
@@ -103,10 +33,10 @@
 			<div class="container">
 				<div class="header-top">
 					<div class="pull-right social-icons">
-						<a href="https://twitter.com/co_linkers"><i class="fa fa-twitter"></i></a>
-						<a href="https://www.facebook.com/CoLinkers.em/?ref=br_rs"><i class="fa fa-facebook"></i></a>
-						<a href="https://www.instagram.com/co_linkers/?hl=en"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-youtube"></i></a>
+						<a href="https://twitter.com/co_linkers" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/CoLinkers.em/?ref=br_rs" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/co_linkers/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.youtube.com/channel/UCeKELzdfUpC6uykXFMdL1ww" target="_blank"><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>
 		        <div class="row">	        		
@@ -218,7 +148,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-9">
 					<div id="event-carousel" class="carousel slide" data-interval="false">
-						<h2 class="heading">THE ROCKING Performers</h2>
+						<h2 class="heading">Our Past Events</h2>
 						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 						<div class="carousel-inner">
@@ -227,15 +157,15 @@
 									<div class="col-sm-4">
 										<div class="single-event">
 											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
-											<h4>Chester Bennington</h4>
-											<h5>Vocal</h5>
+											<h4>ZEAL Summer Camp</h4>
+											<h5>Talk Show</h5>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="single-event">
 											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
-											<h4>Mike Shinoda</h4>
-											<h5>vocals, rhythm guitar</h5>
+											<h4>Chandigarh Marathon</h4>
+											<h5>Running</h5>
 										</div>
 									</div>
 									<div class="col-sm-4">
@@ -252,7 +182,7 @@
 									<div class="col-sm-4">
 										<div class="single-event">
 											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
-											<h4>Chester Bennington</h4>
+											<h4>Taylor Swift</h4>
 											<h5>Vocal</h5>
 										</div>
 									</div>
@@ -287,7 +217,7 @@
 			<img class="img-responsive" src="images/guitar2.jpg" alt="guitar">
 		</div>
 		<div class="about-content">					
-					<h2>About Evento</h2>
+					<h2>About Colinkers</h2>
 					<p>Colinkers is a developing Event Management company in India, headquartered in New Delhi and having major establishments in Patiala. Colinkers is working 24 X 7 to provide you with a neverforgetting experience for college and school events, in addition to providing services for cultural festivals marketing events, NGO events, fashion events among all types of events. It's an evolving event management trend which is soon to reach skies in near future.</p>
 					<a href="#" class="btn btn-primary">View Date & Place <i class="fa fa-angle-right"></i></a>
 				
@@ -295,31 +225,33 @@
 	</section><!--/#about-->
 	
 	<section id="twitter">
-		<div id="twitter-feed" class="carousel slide" data-interval="false">
+		<div id="twitter-feed" data-interval="false">
 			<div class="twit">
 				<img class="img-responsive" src="images/twit.png" alt="twit">
 			</div>
 			<div class="row">
 				<div class="col-sm-6 col-sm-offset-3">
-					<div class="text-center carousel-inner center-block">
+					<div class="text-center center-block">
+						<h2 style="color: #3D3D3D">Subscribe to Newsletter</h2>
 						<div class="item active">
 							<img src="images/twitter/twitter1.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
+
+							<!--<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>-->
+							<!--<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>-->
 						</div>
-						<div class="item">
-							<img src="images/twitter/twitter2.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-						<div class="item">
-							<img src="images/twitter/twitter3.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
+						<!--<div class="item">-->
+							<!--<img src="images/twitter/twitter2.png" alt="">-->
+							<!--<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>-->
+							<!--<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>-->
+						<!--</div>-->
+						<!--<div class="item">-->
+							<!--<img src="images/twitter/twitter3.png" alt="">-->
+							<!--<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>-->
+							<!--<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>-->
+						<!--</div>-->
 					</div>
-					<a class="twitter-control-left" href="#twitter-feed" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-					<a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
+					<!--<a class="twitter-control-left" href="#twitter-feed" data-slide="prev"><i class="fa fa-angle-left"></i></a>-->
+					<!--<a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>-->
 				</div>
 			</div>
 		</div>		
@@ -365,12 +297,12 @@
 	</section><!--/#sponsor-->
 
 	<section id="contact">
-		<div id="map">
-			<div id="gmap-wrap">
-	 			<div id="gmap"> 				
-	 			</div>	 			
-	    	</div>
-		</div><!--/#map-->
+		<!--<div id="map">-->
+			<!--<div id="gmap-wrap">-->
+	 			<!--<div id="gmap">-->
+	 			<!--</div>-->
+	    	<!--</div>-->
+		<!--</div>&lt;!&ndash;/#map&ndash;&gt;-->
 		<div class="contact-section">
 			<div class="ear-piece">
 				<img class="img-responsive" src="images/ear-piece.png" alt="">
@@ -381,18 +313,17 @@
 						<div class="contact-text">
 							<h3>Contact</h3>
 							<address>
-								E-mail: promo@party.com<br>
-								Phone: +1 (123) 456 7890<br>
-								Fax: +1 (123) 456 7891
+								E-mail: contact@colinkers.in<br>
+								Phone: +91-8860907838<br>
 							</address>
 						</div>
 						<div class="contact-address">
 							<h3>Contact</h3>
 							<address>
-								Unit C2, St.Vincent's Trading Est.,<br>
-								Feeder Road,<br>
-								Bristol, BS2 0UY<br>
-								United Kingdom
+								Plot No.- A21/1<br>
+								East Krishna Nagar, Street No. 5<br>
+								Delhi, 110051<br>
+								India.
 							</address>
 						</div>
 					</div>
@@ -425,7 +356,7 @@
     <footer id="footer">
         <div class="container">
             <div class="text-center">
-                <p> Copyright  &copy;2017 &nbsp; Colinkers | All Rights Reserved. <br> Designed by <a target="_blank" href="http://shapebootstrap.net/">Tanuj Vishnoi</a></p>
+                <p> Copyright  &copy;2017 &nbsp; Colinkers | All Rights Reserved. <br> Designed by <a target="_blank" href="https://www.linkedin.com/in/tanuj-vishnoi/">Tanuj Vishnoi</a></p>
             </div>
         </div>
     </footer>
